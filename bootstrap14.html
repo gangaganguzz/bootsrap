@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card mx-auto mt-5 mb-5" style="width: 600px; height: 700px; border: 2px solid black ;">
+            <div class="card-body">
+        <h2 style="text-align: center;">Feedback Form</h2>
+       <div class="form-group mt-5">
+      <label for="email">Name:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your name" name="email">
+    </div>
+     <div class="form-group">
+      <label for="pwd">Email:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter your email" name="pswd">
+    </div>
+    <div class="form-group">
+    <label for="comment">Feedback Message:</label>
+    <textarea class="form-control" rows="3" id="comment"></textarea>
+    </div><br>
+    <div class="form-group">
+       <label for="sel1">How did you find our site?</label>
+     <select class="form-control" id="sel1">
+    <option selected disabled>Choose an option</option>
+    <option>Google Search</option>
+    <option>Social Media</option>
+    <option>Advertisement</option>
+    <option>Other</option>
+  </select>
+</div> <br>
+      <div class="form-group">
+       <label for="">satisfaction level:</label><br>
+       <div class="form-check form-check-inline">
+    <input type="radio" class="form-check-input "name="contact" >
+     <label class="form-check-label ">1</label>
+</div>
+<div class="form-check form-check-inline">
+    <input type="radio" class="form-check-input"name="contact" >
+    <label class="form-check-label ">2</label>
+</div>
+<div class="form-check form-check-inline">
+    <input type="radio" class="form-check-input"name="contact" >
+    <label class="form-check-label ">3</label>
+</div>
+<div class="form-check form-check-inline">
+    <input type="radio" class="form-check-input"name="contact" >
+    <label class="form-check-label ">4</label>
+</div>
+<div class="form-check form-check-inline">
+    <input type="radio" class="form-check-input"name="contact" >
+    <label class="form-check-label ">5</label>
+</div><br><br>
+   <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
