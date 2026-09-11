@@ -3,13 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
+     <div class="container">
+      <div class="card mx-auto mt-5 mb-5" style="width: 600px; height: 820px; border: 2px solid black ;"  >
+        <div class="card-header text-danger bg-warning "><h2 style="text-align: center;">Bakery Feedback Form</h2> </div>
+        <div class="card-body">
+     <div class="form-group mt-5">
+      <label for="email">Name:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your name" name="email">
+    </div>
+     <div class="form-group">
+      <label for="pwd">Email:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter your email" name="pswd">
+    </div>
+    <div class="form-group">
+    <label for="comment">Feedback Message:</label>
+    <textarea class="form-control" rows="3" id="comment"></textarea>
+    </div><br>
+    <div class="form-group">
+       <label for="">Preferred Contact Method:</label>
+       <div class="form-check">
+    <input type="radio" class="form-check-input "name="contact" >
+     <label class="form-check-label ">Email</label>
+</div>
+<div class="form-check">
+    <input type="radio" class="form-check-input"name="contact" >
+    <label class="form-check-label ">Phone</label>
+</div><br>
+
+        <div class="form-group">
+      <label for="">Satisfaction level: 1-10</label>
+      <input type="range" class="form-control-range " min="1" max="10" >
+    </div>
+
+       <div class="form-group">
+       <label for="sel1">Choose type of order:</label>
+     <select class="form-control" id="sel1">
+    <option>Cake</option>
+    <option>Cookies</option>
+    <option>Pastries</option>
+  </select>
+</div> <br>
+
+    <label for="" class="mr-5">Submit Feedback:</label>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </div>
+    </div>
+    </div>
 </body>
 </html>
