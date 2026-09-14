@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dream Travels</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    
+      <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</head>
+
+<body>
+<div class="container text-center my-4">
+    <h1 class="text-primary"> Dream Travels</h1>
+    <p>Explore beautiful destinations around the world</p>
+</div>
+<div id="travelCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#travelCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#travelCarousel" data-slide-to="1"></li>
+        <li data-target="#travelCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" width="100%" height="800px"
+            
+                 alt="Maldives">
+
+            <div class="carousel-caption">
+                <h3>Maldives</h3>
+                <p>Relax on beautiful beaches and enjoy crystal-clear waters.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0" width="100%" height="800px"
+                 alt="Mountains">
+
+            <div class="carousel-caption">
+                <h3>Switzerland</h3>
+                <p>Discover breathtaking mountains and peaceful landscapes.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" width="100%" height="800px"
+                 alt="Paris">
+
+            <div class="carousel-caption">
+                <h3>Paris</h3>
+                <p>Experience the beauty, culture and charm of Paris.</p>
+            </div>
+        </div>
+
+    </div>
+    <a class="carousel-control-prev"
+       href="#travelCarousel"
+       data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a class="carousel-control-next"
+       href="#travelCarousel"
+       data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
+<div class="text-center my-4">
+
+    <button type="button"
+            class="btn btn-primary btn-lg"
+            data-toggle="modal"
+            data-target="#bookingModal">
+        Book Now
+    </button>
+
+</div>
+<div class="modal fade" id="bookingModal">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Travel Booking Details</h4>
+
+                <button type="button"
+                        class="close"
+                        data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <h5>Plan Your Dream Trip </h5>
+
+                <p>
+                    Book your trip with us and enjoy a comfortable
+                    and memorable travel experience.
+                </p>
+
+                <ul>
+                    <li>Comfortable accommodation</li>
+                    <li> Daily meals included</li>
+                    <li> Airport pickup and drop</li>
+                    <li>Guided sightseeing</li>
+                </ul>
+
+                <p>
+                    <strong>Starting Price:</strong> ₹25,000 per person
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal">
+                    Close
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+ 
+<div class="fixed-bottom text-right p-3">
+
+    <span class="text-primary"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="Please check the destination, travel dates and package details before booking.">
+        <i class="fas fa-info-circle"></i>
+    </span>
+
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
